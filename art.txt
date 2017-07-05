@@ -1,0 +1,24 @@
+black_bg=`tput setab 0`
+red=`tput setaf 1`
+green=`tput setaf 2`
+blue=`tput setaf 4`
+magenta=`tput setaf 5`
+cyan=`tput setaf 6`
+white=`tput setaf 7`
+reset=`tput sgr0`
+echo "${black_bg}${white}         o        o        .        .     o        .      o         o ${reset}"
+echo "${black_bg}${white}o          o            o              .             .                ${reset}"
+echo "${black_bg}${white}    .         .           .    .        .    .           .      o   . ${reset}"
+echo "${black_bg}${white}  .       o     ___  ___  ________  ______   .          o      .     .${reset}"
+echo "${black_bg}${white}               |\  \|\  \|\   __  \|\     \.             o          . ${reset}"
+echo "${black_bg}${white}      o        \ \  \_\  \ \  \|\  \ \     \                      o   ${reset}"
+echo "${black_bg}${white}   .          . ${cyan}\ \__   __\ \  \ \  \ \_____\ ${white} o           .         .${reset}"
+echo "${black_bg}${white}                 ${cyan}\__ \  \_|\ \  \_\  \| -----\  ${white}             o   .    ${reset}"
+echo "${black_bg}${white} .             o    ${green}\ \__\  \ \ ______\|\_____\  ${white} .       o         . ${reset}"
+echo "${black_bg}${white}      .   o      .   ${green}\|__| . \|_______|\|_____| ${white}  o           .       ${reset}"
+echo "${black_bg}${white}    o        o        .        .     o        .                     o ${reset}"
+echo "${black_bg}${white}           .        .     o        .                 .                ${reset}"
+echo "${black_bg}${white}       o         .     o        .         o         .         .       ${reset}"
+echo "${black_bg}${white}~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~${reset}"
+echo "${black_bg}${green}======================================================================${reset}"
+echo "$(date +'%I:%M %p')"
