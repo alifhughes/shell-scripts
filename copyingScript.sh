@@ -26,10 +26,11 @@ do
     echo -e "Checking $d ... \n";
 
     # Get date of folder in UNIX seconds
-    date_of_curr_folder="$(stat -f "%B" "$d")"
+    date_of_curr_folder_birth="$(stat -f "%B" "$d")"
+    date_of_curr_folder_change="$(stat -f "%c" "$d")"
 
-    # Check if current folder creation date is after date passed in
-    if [ ${date_of_curr_folder} -ge ${converted_date_to_compare} ] ; then
+    # Check if current folder creation date is after date passed in or changed date
+    if [ ${date_of_curr_folder_birth} -ge ${converted_date_to_compare} -o ${date_of_curr_folder_change} -ge ${converted_date_to_compare} ] ; then
 
         echo -e "Copying $d and its contents... \n";
 
