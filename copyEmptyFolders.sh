@@ -2,23 +2,12 @@
 
 # TODO:
 # - help argument
-# - check format
-# - check if all arguments are present
 
 # Get the directoy to copy iterate and copy from
 dir_to_copy_from="$1"
 
 # Get the directory to copy to
 dir_to_copy_to="$2"
-
-# Iterate all directories in the folder
-#  - check if current directory is empty
-#       - if it is copy
-#       - if it isn't
-#           - loop through subdirectories of current directory
-#               - check if current directory is empty
-#                  - if it is copy
-#                  - if it isn't
 
 # Iterate the directory passed in
 for d in "$dir_to_copy_from"*; do
